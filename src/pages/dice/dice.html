@@ -8,5 +8,21 @@
 </ion-header>
 
 <ion-content>
-<H1>Dice</H1>
+
+<ion-grid>
+  <ion-row>
+    <ion-col width-50><H1>open:</H1></ion-col>
+    <ion-col width-50><H1 style="text-align: right;">{{open}}</H1></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-50><H1>unmodified:</H1></ion-col>
+    <ion-col width-50><H1 style="text-align: right;">{{unmodified}}</H1></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button ion-button full (click)="dice()">Dice</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
 </ion-content>
